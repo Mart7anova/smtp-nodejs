@@ -1,6 +1,6 @@
 # gmail-nodejs
 
-Designed to send messages to my gmail.
+Сreated  to send messages to my gmail.
 
 ### Stack:
 - body-parser
