@@ -23,7 +23,9 @@ const transporter = nodemailer.createTransport({
 })
 
 app.get('/', (req, res) => {
-    res.send('Hello, to send a message, you need to send a post request to https://gmail-nodejs.vercel.app/sendMessage')
+    res.send(`Hello, to send a message, 
+    you need to send a post request to https://gmail-nodejs.vercel.app/sendMessage. 
+    My portfolio <a href="https://mart7anova.github.io/portfolio/"/>`)
 })
 
 app.post('/sendMessage', async (req, res) => {
