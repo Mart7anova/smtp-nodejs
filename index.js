@@ -7,7 +7,6 @@ require('dotenv').config()
 const app = express()
 
 app.use(cors())
-app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 const login = process.env.EMAIL | 'email'
@@ -39,7 +38,7 @@ app.post('/sendMessage', async (req, res) => {
                     <p style="font-size: 20px">Message:<br/><br/> ${message}</p>
                 </div>`
     })
-    res.send(res.body)
+    res.send(200)
 })
 
 app.listen(port, () => {
