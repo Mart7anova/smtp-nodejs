@@ -19,7 +19,7 @@ const transporter = nodemailer.createTransport({
 })
 
 app.get('/', (req, res) => {
-    res.send('Hello, to send a message, you need to send a post request to http://localhost:3010/sendMessage')
+    res.send('Hello, to send a message, you need to send a post request to https://gmail-nodejs.vercel.app/sendMessage')
 })
 
 app.post('/sendMessage', async (req, res) => {
