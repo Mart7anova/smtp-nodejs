@@ -9,9 +9,9 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-const login = process.env.EMAIL | 'email'
-const password = process.env.PASS | 'password'
-const port = process.env.PORT | 3010
+const login = process.env.EMAIL
+const password = process.env.PASS
+const port = process.env.PORT
 
 const transporter = nodemailer.createTransport({
     service: "gmail.com",
